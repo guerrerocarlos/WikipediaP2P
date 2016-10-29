@@ -1,0 +1,37 @@
+{
+   "background": {
+      "scripts": [ "background-bundle.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/icon19-none.png",
+         "38": "img/icon38-none.png"
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "end.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Contribute to Wikipedia in a completely new way!",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon128.png",
+      "32": "img/icon128.png",
+      "48": "img/icon128.png",
+      "64": "img/icon128.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "29.0",
+   "name": "WikipediaP2P",
+   "optional_permissions": [ "management" ],
+   "options_page": "",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "contextMenus", "webRequest", "webRequestBlocking", "webNavigation", "storage", "unlimitedStorage", "notifications", "idle", "alarms" ],
+   "short_name": "WikipediaP2P",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9.6",
+   "web_accessible_resources": [  ]
+}
