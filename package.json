@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "simple-sha1": "^2.0.8",
     "webtorrent": "git+https://github.com/guerrerocarlos/webtorrent.git"
